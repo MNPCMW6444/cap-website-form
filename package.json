@@ -1,6 +1,6 @@
 {
   "name": "@caphub-group/website-form",
-  "version": "2.2.19",
+  "version": "2.2.21",
   "description": "website form for website and client",
   "type": "module",
   "main": "dist/index.js",
@@ -32,10 +32,7 @@
     "@caphub-group/caphub-types": "^3.9.94",
     "@caphub-group/mainserver-provider": "^4.6.59",
     "@mui/material": "^5.12.3",
-    "@types/node": "^20.1.1",
-    "@types/react": "^18.2.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "typescript": "^5.0.4"
   }
 }
