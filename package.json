@@ -1,6 +1,6 @@
 {
   "name": "@caphub-group/website-form",
-  "version": "2.2.21",
+  "version": "2.2.30",
   "description": "website form for website and client",
   "type": "module",
   "main": "dist/index.js",
@@ -29,10 +29,8 @@
   },
   "homepage": "https://github.com/CapHub-group/website-form#readme",
   "dependencies": {
-    "@caphub-group/caphub-types": "^3.9.94",
-    "@caphub-group/mainserver-provider": "^4.6.59",
-    "@mui/material": "^5.12.3",
-    "react": "^18.2.0",
-    "typescript": "^5.0.4"
+    "@caphub-group/mainserver-provider": "^4.6.64",
+    "@emotion/react": "^11.11.0",
+    "@mui/material": "^5.12.3"
   }
 }
