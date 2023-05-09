@@ -1,7 +1,7 @@
 import React from "react";
 import { Slider } from "@mui/material";
 import { styled } from "@mui/system";
-import VIcon from "../assets/v-icon.svg";
+import vsvg from "./v-svg.js";
 import { FieldProps } from ".";
 import {
   PositiveNumber,
@@ -26,7 +26,7 @@ const CustomSlider = styled(Slider)`
   }
   .MuiSlider-thumb {
     position: relative;
-    background-image: url(${VIcon});
+    background-image: url(data:image/svg+xml;utf8,${vsvg});
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

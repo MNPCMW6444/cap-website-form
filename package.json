@@ -1,14 +1,10 @@
 {
   "name": "@caphub-group/website-form",
-  "version": "2.2.53",
+  "version": "2.2.55",
   "description": "website form for website and client",
   "type": "module",
   "main": "dist/index.js",
   "types": "src/index.tsx",
-  "files": [
-    "dist/",
-    "assets/"
-  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/",
     "access": "restricted"
