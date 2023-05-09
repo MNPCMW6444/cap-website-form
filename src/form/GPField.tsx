@@ -1,14 +1,20 @@
 import React from "react";
 import { TextField } from "@mui/material";
 import { FieldProps } from ".";
-import { Period, TimeUnit } from "@caphub-group/caphub-types";
+import {
+  Period,
+  PositiveNumber,
+  TimeUnit,
+  toPositiveNumber,
+} from "@caphub-group/caphub-types";
 
 const GPField = ({ formData, setFormData }: FieldProps) => {
   const handleAmountChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const amount = parseFloat(event.target.value);
     const newPeriod: Period = {
       ...formData.gracePeriod,
-      amount: amount > 0 ? amount : 0,
+      amount:
+        toPositiveNumber(amount > 0 ? amount : 0) || (1 as PositiveNumber),
     };
     setFormData({ ...formData, gracePeriod: newPeriod });
   };

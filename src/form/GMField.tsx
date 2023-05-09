@@ -2,7 +2,11 @@ import React from "react";
 import { RadioGroup, FormControlLabel, Radio } from "@mui/material";
 import { styled } from "@mui/system";
 import { FieldProps } from ".";
-import { toPositiveNumber } from "@caphub-group/caphub-types";
+import {
+  PositiveNumber,
+  TimeUnit,
+  toPositiveNumber,
+} from "@caphub-group/caphub-types";
 
 const StyledFormControlLabel = styled(FormControlLabel)`
   color: #fff;
@@ -40,15 +44,17 @@ const GMField = ({ formData, setFormData }: FieldProps) => {
     setFormData({
       ...formData,
       gracePeriod: {
-        amount: toPositiveNumber(parseInt(event.target.value)) || 0,
-        timeUnit: "Months",
+        amount:
+          toPositiveNumber(parseInt(event.target.value)) ||
+          (0 as PositiveNumber),
+        unit: TimeUnit.Months,
       },
     });
   };
 
   return (
     <GracePeriodRadioGroup
-      value={formData.gracePeriod}
+      value={formData.gracePeriod.amount}
       onChange={handleChange}
     />
   );

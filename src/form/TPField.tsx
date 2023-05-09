@@ -1,8 +1,13 @@
 import React from "react";
 import { Slider } from "@mui/material";
 import { styled } from "@mui/system";
-import VIcon from "../assets/check-white.svg";
+import VIcon from "../assets/v-icon.svg";
 import { FieldProps } from ".";
+import {
+  PositiveNumber,
+  TimeUnit,
+  toPositiveNumber,
+} from "@caphub-group/caphub-types";
 
 const CustomSlider = styled(Slider)`
   color: #3f51b5;
@@ -66,7 +71,12 @@ const TPField = ({ formData, setFormData }: FieldProps) => {
   ) => {
     setFormData({
       ...formData,
-      termLength: Array.isArray(value) ? value[0] : value,
+      termLength: {
+        amount:
+          toPositiveNumber(Array.isArray(value) ? value[0] : value) ||
+          (1 as PositiveNumber),
+        unit: TimeUnit.Months,
+      },
     });
   };
 
