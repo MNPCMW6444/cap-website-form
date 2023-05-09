@@ -1,3 +1,3 @@
-declare module "@caphub-funding/mainserver-provider" {
-  export * from "@caphub-funding/mainserver-provider/lib";
+declare module "@caphub-funding/website-form" {
+  export * from "@caphub-funding/website-form/lib";
 }
