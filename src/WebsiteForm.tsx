@@ -5,7 +5,7 @@ import Form from "./Form";
 import Result from "./Result";
 import { useState } from "react";
 
-const App = () => {
+const WebsiteForm = () => {
   const [loanAmount, setLoanAmount] = useState(0);
   const [interest, setInterest] = useState(0);
   const [amortization, setAmortization] = useState(0);
@@ -30,4 +30,4 @@ const App = () => {
     </Grid>
   );
 };
-export default App;
+export default WebsiteForm;
