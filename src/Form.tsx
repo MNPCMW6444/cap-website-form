@@ -151,7 +151,6 @@ const Form = ({
             See What You Can Get
           </StyledTypography>
           <form>
-            return (
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <ARRField formData={formData} setFormData={setFormData} />
@@ -190,7 +189,6 @@ const Form = ({
                 <EmailField formData={formData} setFormData={setFormData} />
               </Grid>
             </Grid>
-            );
             {!inner && (
               <Box sx={{ mt: 3, display: "flex", justifyContent: "center" }}>
                 <StyledButton onClick={sendForm} variant="contained">
