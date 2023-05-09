@@ -1,6 +1,6 @@
 {
   "name": "@caphub-group/website-form",
-  "version": "2.2.39",
+  "version": "2.2.43",
   "description": "website form for website and client",
   "type": "module",
   "main": "dist/index.js",
