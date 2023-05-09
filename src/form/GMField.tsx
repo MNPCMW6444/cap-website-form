@@ -54,7 +54,7 @@ const GMField = ({ formData, setFormData }: FieldProps) => {
 
   return (
     <GracePeriodRadioGroup
-      value={formData.gracePeriod.amount}
+      value={formData?.gracePeriod?.amount}
       onChange={handleChange}
     />
   );

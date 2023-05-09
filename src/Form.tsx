@@ -109,6 +109,10 @@ const Form = ({
           setInterest && setInterest(res?.data?.interest || 0);
           setAmortization && setAmortization(res?.data?.amortization || 0);
         } else setFull(true);
+      })
+      .catch((err) => {
+        console.log(err);
+        setAction("IDLE");
       });
   }, [
     axiosInstance,
