@@ -1,3 +1,3 @@
-import WebsiteForm from "./WebsiteForm";
+import WebsiteForm from "./WebsiteForm.js";
 
 export default WebsiteForm;

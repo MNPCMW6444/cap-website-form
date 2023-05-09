@@ -1,18 +1,18 @@
 import React from "react";
 
 import { Grid } from "@mui/material";
-import ARRField from "./form/ARRField";
-import BMField from "./form/BMField";
-import GRField from "./form/GRField";
-import VField from "./form/VField";
-import GMField from "./form/GMField";
-import CRField from "./form/CRField";
-import BSField from "./form/BSField";
-import HQCField from "./form/HQCField";
-import AMField from "./form/AMField";
-import TPField from "./form/TPField";
-import GPField from "./form/GPField";
-import EmailField from "./form/EmailField";
+import ARRField from "./form/ARRField.js";
+import BMField from "./form/BMField.js";
+import GRField from "./form/GRField.js";
+import VField from "./form/VField.js";
+import GMField from "./form/GMField.js";
+import CRField from "./form/CRField.js";
+import BSField from "./form/BSField.js";
+import HQCField from "./form/HQCField.js";
+import AMField from "./form/AMField.js";
+import TPField from "./form/TPField.js";
+import GPField from "./form/GPField.js";
+import EmailField from "./form/EmailField.js";
 
 import {
   useContext,
@@ -29,7 +29,7 @@ import {
   ProvideMainServer,
   MainServerContext,
 } from "@caphub-group/mainserver-provider";
-import App from "./WebsiteForm";
+import WebsiteForm from "./WebsiteForm.js";
 const StyledContainer = styled(Container)`
   font-family: "Helvetica", sans-serif;
   background-color: #000;
@@ -138,7 +138,7 @@ const Form = ({
   }
 
   return full ? (
-    <App />
+    <WebsiteForm />
   ) : (
     <ProvideMainServer>
       <StyledContainer maxWidth="sm">

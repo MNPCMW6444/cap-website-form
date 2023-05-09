@@ -1,8 +1,8 @@
 import React from "react";
 
-import Grid from "@mui/material/Grid";
-import Form from "./Form";
-import Result from "./Result";
+import { Grid } from "@mui/material";
+import Form from "./Form.js";
+import Result from "./Result.js";
 import { useState } from "react";
 
 const WebsiteForm = () => {
