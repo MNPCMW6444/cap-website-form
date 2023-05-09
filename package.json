@@ -1,0 +1,40 @@
+{
+  "name": "@caphub-group/mainserver-provider",
+  "version": "4.4.57",
+  "description": "mainserver provider for react apps",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "restricted"
+  },
+  "scripts": {
+    "prebuild": "npm run version:patch",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version",
+    "update": "npx npm-check-updates -u",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && cp package.json ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CapHub-group/mainserver-provider.git"
+  },
+  "author": "Michael Nusair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CapHub-group/mainserver-provider/issues"
+  },
+  "homepage": "https://github.com/CapHub-group/mainserver-provider#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@types/node": "^18.15.13",
+    "axios": "^1.3.6",
+    "@types/react": "^18.0.38",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.4"
+  }
+}
