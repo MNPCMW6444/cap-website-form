@@ -1,6 +1,6 @@
 {
   "name": "@caphub-group/website-form",
-  "version": "2.2.62",
+  "version": "2.2.63",
   "description": "website form for website and client",
   "type": "module",
   "main": "dist/index.js",
@@ -31,6 +31,6 @@
   "dependencies": {
     "@caphub-group/caphub-types": "^3.9.94",
     "@caphub-group/mainserver-provider": "^4.6.64",
-    "@caphub-group/theme-provider": "^1.1.18"
+    "@caphub-group/theme-provider": "^1.1.20"
   }
 }
